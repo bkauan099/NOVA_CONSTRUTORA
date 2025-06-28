@@ -1,0 +1,147 @@
+.vistoria-data-entry-container {
+  padding: 30px;
+  background-color: #f8f9fa;
+  min-height: 120vh;
+  height: auto;
+  padding-bottom: 100px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  max-width: 600px; /* Aumenta um pouco a largura */
+  margin: 30px auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.vistoria-data-entry-container h1 {
+  text-align: center;
+  color: #004d40;
+  margin-bottom: 30px;
+  font-size: 34px;
+}
+
+.vistoria-form {
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.info-line {
+  margin-bottom: 18px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.label {
+  color: #0056b3;
+  font-weight: bold;
+  margin-right: 4px; /* DIMINUI para aproximar os textos */
+  min-width: 30px; /* Opcional: Pode reduzir para caber melhor */
+  text-align: left;
+}
+
+.value {
+  color: #000; /* Preto para os valores */
+}
+
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 25px;
+}
+
+.action-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  min-width: 180px;
+  flex: 1 1 180px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.action-button:hover {
+  transform: translateY(-2px);
+}
+
+.action-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.action-button.start-button {
+  background-color: #28a745;
+}
+.action-button.start-button:hover {
+  background-color: #218838;
+}
+
+.action-button.reschedule-button {
+  background-color: #ffc107;
+  color: #333;
+}
+.action-button.reschedule-button:hover {
+  background-color: #e0a800;
+}
+
+.action-button.finalize-button {
+  background-color: #dc3545;
+}
+.action-button.finalize-button:hover {
+  background-color: #c82333;
+}
+
+.back-to-list-button {
+  display: block;
+  width: fit-content;
+  margin: 40px auto 0;
+  background-color: #004d40;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-list-button:hover {
+  background-color: #00332c;
+}
+
+@media (max-width: 700px) {
+  .vistoria-data-entry-container {
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .vistoria-data-entry-container h1 {
+    font-size: 28px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .action-button {
+    width: 100%;
+  }
+
+  .label {
+    min-width: unset;
+    margin-bottom: 5px;
+  }
+}
+/* === DEBUG VISUAL (OPCIONAL) === 
+* {
+  outline: 1px solid rgba(255, 0, 0, 0.05); /* Remove se não quiser visualizar os limites */
+
+.imagem-empreendimento{
+  width: 540px !important;
+  height: 300px !important;
+}
